@@ -585,12 +585,14 @@ if g:rc_use_plug_manager && filereadable(expand("~/.vim/autoload/plug.vim"))
 
     " Plugin Config - onecolorscheme {{{ "
 
-    if filereadable(expand("~/.vim/plugged/vim-one/colors/one.vim"))
-        colorscheme one
-        if has("gui_running") || has("gui_vimr")
-            set background=light
-        endif
-    endif
+    "    if filereadable(expand("~/.vim/plugged/vim-one/colors/one.vim"))
+    "        colorscheme one
+    "        if has("gui_running") || has("gui_vimr")
+    "            set background=light
+    "        endif
+    "    endif
+
+    ""    colorscheme dracula
 
     " }}} Plugin Config - onecolorscheme "
 
