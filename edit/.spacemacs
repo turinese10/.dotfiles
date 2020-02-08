@@ -43,6 +43,7 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
+     emmet
      c-c++
      python
      html
