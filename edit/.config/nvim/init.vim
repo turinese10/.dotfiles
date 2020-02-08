@@ -513,6 +513,7 @@ if g:rc_use_plug_manager
             Plug 'mbbill/undotree'
         endif
         Plug 'mattn/emmet-vim'
+        Plug 'dracula/vim'
         Plug 'dhruvasagar/vim-table-mode'
         Plug 'machakann/vim-sandwich'
         Plug 'wellle/targets.vim'
@@ -592,7 +593,7 @@ if g:rc_use_plug_manager && filereadable(expand("~/.vim/autoload/plug.vim"))
     "        endif
     "    endif
 
-    ""    colorscheme dracula
+        colorscheme dracula
 
     " }}} Plugin Config - onecolorscheme "
 
