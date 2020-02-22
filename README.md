@@ -11,6 +11,7 @@ TODO
 Here are some of the applications that I utilize.
  - A packages.text file is included in the .text directory with a complete list of installed packages for my own replication purposes.
 
+| Type              | Application     |
 | :---:             | :---:           |
 | Distro            | Manjaro         |
 | Shell             | zsh (oh-my-zsh) |
@@ -25,6 +26,7 @@ Here are some of the applications that I utilize.
 
 Here is a description of my current theme. It is miss-matched to an extent, but it works for me. It uses a Matcha theme for GTK and a dracula theme for the editors and terminal. With the exception of spacemacs, as I enjoy the default theme.
 
+| Item            | theme                                                                                               |
 | :---:           | :---:                                                                                               |
 | GTK2/3          | [Matcha-dark-sea](https://github.com/vinceliuice/matcha)                                            |
 | Termite         | [base16-dracula](https://github.com/khamer/base16-termite/blob/master/themes/base16-dracula.config) |
