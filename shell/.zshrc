@@ -82,8 +82,12 @@ plugins=(git
         zsh-syntax-highlighting
         colored-man-pages
         colorize
+        command-not-found
         copydir
         copyfile
+        thefuck
+        history
+        fasd
     )
 
 source $ZSH/oh-my-zsh.sh
