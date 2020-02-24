@@ -10,22 +10,22 @@
     background-color:               rgba ( 0, 0, 0, 0 % );
     spacing:                        2;
     separatorcolor:                 rgba ( 115, 147, 138, 100 % );
-    normal-background:              rgba ( 40, 52, 58, 80 % );
+    normal-background:              rgba ( 40, 52, 58, 100 % );
     normal-foreground:              rgba ( 248, 248, 242, 70 % );
-    normal-background-selected:     rgba ( 30, 38, 43, 80 % );
-    normal-foreground-selected:     rgba ( 248, 248, 242, 80 % );
-    active-background:              rgba ( 40, 52, 58, 80 % );
+    normal-background-selected:     rgba ( 30, 38, 43, 100 % );
+    normal-foreground-selected:     rgba ( 248, 248, 242, 100 % );
+    active-background:              rgba ( 40, 52, 58, 100 % );
     active-foreground:              rgba ( 22, 160, 133, 70 % );
-    active-background-selected:     rgba ( 20, 20, 17, 80 % );
-    active-foreground-selected:     rgba ( 22, 160, 133, 80 % );
-    alternate-background:           rgba ( 40, 52, 58, 80 % );
+    active-background-selected:     rgba ( 20, 20, 17, 100 % );
+    active-foreground-selected:     rgba ( 22, 160, 133, 100 % );
+    alternate-background:           rgba ( 40, 52, 58, 100 % );
     alternate-foreground:           rgba ( 248, 248, 242, 70 % );
-    alternate-background-selected:  rgba ( 22, 160, 133, 80 % );
-    alternate-foreground-selected:  rgba ( 248, 248, 242, 80 % );
-    urgent-background:              rgba ( 40, 52, 58, 80 % );
+    alternate-background-selected:  rgba ( 22, 160, 133, 100 % );
+    alternate-foreground-selected:  rgba ( 248, 248, 242, 100 % );
+    urgent-background:              rgba ( 40, 52, 58, 100 % );
     urgent-foreground:              rgba ( 253, 214, 15, 70 % );
-    urgent-background-selected:     rgba ( 22, 160, 133, 80 % );
-    urgent-foreground-selected:     rgba ( 253, 214, 15, 80 % );
+    urgent-background-selected:     rgba ( 22, 160, 133, 100 % );
+    urgent-foreground-selected:     rgba ( 253, 214, 15, 100 % );
 }
 #window {
     background-color: @normal-background;

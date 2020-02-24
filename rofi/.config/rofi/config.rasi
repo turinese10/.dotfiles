@@ -8,7 +8,7 @@ configuration {
     kb-mode-next:                   "Shift+Right,Control+Tab,Control+l";
     kb-mode-previous:               "Shift+Left,Control+Shift+Tab,Control+h";
     kb-remove-char-back:            "BackSpace";
-/*	modi: "window,run,ssh";*/
+  	modi: "window,run,ssh,file-browser,calc";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
