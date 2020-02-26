@@ -7,6 +7,7 @@ These are the configuration files I use for my current setup
 <!--
 http://dotshare.it/dots/8270/ i3+polybar @Arch
 https://github.com/davatorium/rofi/issues/810
+https://devmadness.com/os-software/conky-themes-scripts-configs/
 -->
 
 TODO
@@ -54,5 +55,5 @@ Here is a description of my current theme. It is miss-matched to an extent, but 
 | Spacemacs       | Default                                                                                             |
 | Neovim / VSCode | [Dracula](https://draculatheme.com/)                                                                |
 | Terminal Font   | MesloLGS NF                                                                                         |
-| Regular Font    | TODO                                                                                                |
+| Regular Font    | Noto Sans                                                                                       |
 
