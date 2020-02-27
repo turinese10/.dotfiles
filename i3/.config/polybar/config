@@ -63,9 +63,11 @@ font-1 = "Material Icons:size=12;4"
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
+;updates arch combined
+
 modules-left = i3
 modules-center = xwindow
-modules-right = pulseaudio memory cpu wlan eth battery date
+modules-right = pulseaudio sep memory cpu temp sep checknetwork battery date
 
 tray-position = right
 tray-padding = 2
@@ -207,6 +209,21 @@ label-urgent-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/checknetwork]
+type = custom/script
+
+exec = ~/.dotfiles/i3/.config/polybar/check-network.sh
+
+tail = true
+interval = 5
+
+format-background = ${colors.background-alt}
+format-foreground = ${colors.foreground}
+format-padding = 1
+
+click-left = networkmanager_dmenu &
+click-middle = networkmanager_dmenu &
+click-right = networkmanager_dmenu &
 
 [module/mpd]
 type = internal/mpd
@@ -252,7 +269,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -321,7 +338,7 @@ label = %date% %time%
 
 [module/updates-arch-combined]
 type = custom/script
-exec = ~/polybar-scripts/updates-arch-combined.sh
+exec = ~/.dotfiles/i3/.config/polybar/updates-arch-combined.sh
 interval = 600
 
 [module/pulseaudio]
