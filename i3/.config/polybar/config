@@ -47,7 +47,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 2
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -67,7 +67,7 @@ font-1 = "Material Icons:size=12;4"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = pulseaudio sep memory cpu temp sep checknetwork battery date
+modules-right = alsa sep memory cpu temperature sep wlan battery date updates-arch-combined
 
 tray-position = right
 tray-padding = 2
@@ -261,6 +261,7 @@ content = |
 content-foreground = ${colors.foreground-alt}
 
 content-padding = 1
+
 [module/backlight-acpi]
 inherit = module/xbacklight
 type = internal/backlight
@@ -284,7 +285,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp1s0
+interface = wlp0s20f3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
