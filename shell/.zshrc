@@ -82,8 +82,9 @@ plugins=(git
         zsh-syntax-highlighting
         colored-man-pages
         colorize
+        catimg
         command-not-found
-        copydir
+        copypath
         copyfile
         thefuck
         history
@@ -123,6 +124,7 @@ alias pbselect='xclip -selection primary -o'
 alias stow='stow -vR'
 alias diff='colordiff'
 alias mpkg='makepkg -si'
+alias agent='eval "$(ssh-agent -s)"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
