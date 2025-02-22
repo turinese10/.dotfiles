@@ -35,14 +35,13 @@ Here are some of the applications that I utilize.
 
 | Type              | Application     |
 | :---:             | :---:           |
-| Distro            | Manjaro         |
+| Distro            | Debian          |
 | Shell             | zsh (oh-my-zsh) |
 | WM                | i3              |
 | Terminal Emulator | Termite         |
 | Main Editor       | Spacemacs       |
-| Secondary Editor  | Neovim          |
+| Secondary Editor  | vim             |
 | Tertiary Editor   | VSCode          |
-| TODO              | TODO            |
 
 ## Theme configuration
 

@@ -9,7 +9,7 @@ configuration {
     kb-mode-previous:               "Shift+Left,Control+Shift+Tab,Control+h";
     kb-remove-char-back:            "BackSpace";
     kb-mode-complete:               "Control+Shift+space";
-  	modi:                           "window,run,ssh,file-browser-extended,calc,drun";
+  	modi:                           "window,run,ssh,filebrowser,drun";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
