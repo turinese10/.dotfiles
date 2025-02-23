@@ -1,5 +1,4 @@
 configuration {
-/*  theme:                          "~/.config/rofi/manjaro-i3-rofi.rasi";*/
     kb-row-up:                      "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
     kb-row-down:                    "Down,Control+j";
     kb-accept-entry:                "Control+m,Return,KP_Enter";
@@ -9,7 +8,7 @@ configuration {
     kb-mode-previous:               "Shift+Left,Control+Shift+Tab,Control+h";
     kb-remove-char-back:            "BackSpace";
     kb-mode-complete:               "Control+Shift+space";
-  	modi:                           "window,run,ssh,filebrowser,drun";
+  	modi:                           "window,run,ssh,filebrowser,drun,combi";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
@@ -152,5 +151,12 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
+    display-ssh:    " ssh:";
+    display-run:    " run:";
+    display-drun:   " drun:";
+    display-window: " window:";
+    display-combi:  " combi:";
+    display-filebrowser:  "📁 file:";
 }
-@theme "~/.config/rofi/manjaro-i3-rofi.rasi"
+@theme "~/.config/rofi/gruvbox-material.rasi"
+/*@theme "/dev/null"*/

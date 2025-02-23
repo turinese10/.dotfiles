@@ -125,8 +125,8 @@ alias stow='stow -vR'
 alias diff='colordiff'
 alias mpkg='makepkg -si'
 alias agent='eval "$(ssh-agent -s)"'
+alias python='python3'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/jon/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/jon/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
