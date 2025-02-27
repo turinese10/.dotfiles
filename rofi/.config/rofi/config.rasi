@@ -8,7 +8,7 @@ configuration {
     kb-mode-previous:               "Shift+Left,Control+Shift+Tab,Control+h";
     kb-remove-char-back:            "BackSpace";
     kb-mode-complete:               "Control+Shift+space";
-  	modi:                           "window,run,ssh,filebrowser,drun,combi";
+  	modi:                           "window,run,ssh,filebrowser,drun,calc,combi";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
@@ -157,6 +157,7 @@ configuration {
     display-window: " window:";
     display-combi:  " combi:";
     display-filebrowser:  "📁 file:";
+    display-calc:  "= calc:";
 }
 @theme "~/.config/rofi/gruvbox-material.rasi"
 /*@theme "/dev/null"*/

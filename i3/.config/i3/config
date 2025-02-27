@@ -6,6 +6,10 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Grab dpi
+set_from_resource $dpi Xft.dpi
+
+
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -14,7 +18,7 @@ default_border pixel 1
 default_floating_border normal
 
 #synapse search
-bindsym $mod+Tab exec --no-startup-id rofi -show drun -dpi 200
+bindsym $mod+Tab exec --no-startup-id rofi -show drun -dpi $dpi
 
 # Hide borders
 hide_edge_borders none
@@ -38,12 +42,6 @@ bindsym $mod+Shift+Return exec --no-startup-id i3-sensible-terminal -d "$(xcwd)"
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-
-# launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -301,6 +299,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Color palette used for the i3-sensible-terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -344,35 +343,35 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
-
-    colors {
-        # bar background color
-        background $bg
-        # text color used for blocks that do not have a color specified.
-        statusline $yellow
-        separator  $darkgray
-        # workspaces section            
-        #                    border  backgr. text
-        focused_workspace    $aqua $aqua $darkgray
-        inactive_workspace   $darkgray $darkgray $yellow
-        active_workspace     $darkgray $darkgray $yellow
-        urgent_workspace     $red $red $bg
-    }
-}
+## Start i3bar to display a workspace bar (plus the system information i3status if available)
+#bar {
+#	i3bar_command i3bar
+#	status_command i3status
+#	position bottom
+#
+### please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+##	tray_output primary
+##	tray_output eDP1
+#
+#	bindsym button4 nop
+#	bindsym button5 nop
+##   font xft:URWGothic-Book 11
+#	strip_workspace_numbers yes
+#
+#    colors {
+#        # bar background color
+#        background $bg
+#        # text color used for blocks that do not have a color specified.
+#        statusline $yellow
+#        separator  $darkgray
+#        # workspaces section            
+#        #                    border  backgr. text
+#        focused_workspace    $aqua $aqua $darkgray
+#        inactive_workspace   $darkgray $darkgray $yellow
+#        active_workspace     $darkgray $darkgray $yellow
+#        urgent_workspace     $red $red $bg
+#    }
+#}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -389,8 +388,8 @@ client.urgent           $red $red $white $red $red
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 10
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

@@ -130,3 +130,4 @@ alias python='python3'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /home/jon/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/zig-linux-x86_64-0.13.0:$PATH"

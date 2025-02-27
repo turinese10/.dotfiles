@@ -45,6 +45,11 @@ Here are some of the applications that I utilize.
 
 ## Theme configuration
 
+I manage GTK, font and icon themes using lxappearance
+```
+sudo apt install lxappearance
+```
+
 | Item            | theme                                                                                               |
 | :---:           | :---:                                                                                               |
 | GTK2/3          | [Gruvbox-Dark](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)                               |
@@ -56,4 +61,54 @@ Here are some of the applications that I utilize.
 | Icons           | Papirus                                                                                             |
 
 ## Additional Install Steps
+
+### Vscode
+
+Install vscode using the [deb file](https://code.visualstudio.com/)
+
+### Spacemacs
+
+The emacs package in the current bookworm repo are out of date use the bookworm backports.
+
+```
+sudo apt edit-sources
+# Add the following line to the bottom of the file
+deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
+sudo apt update
+sudo apt install emacs -t bookworm-backports
+```
+
+After that spacemacs can be installed
+
+```
+git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+```
+
+### rofi-calc plugin
+Install the rofi-calc plugin found here: https://github.com/svenstaro/rofi-calc
+
+### ly
+
+Follow the instructions to install ly here: https://github.com/fairyglade/ly
+
+Make sure to install zig and use V0.13.0: https://ziglang.org/learn/getting-started/
+
+Set grub resolution by adding the following to /etc/default/grub
+```
+GRUB_GFXMODE=640x480
+```
+After remember to run:
+```
+sudo update-grub
+```
+
+Change tty font for ly to scale properly in /etc/default/console-setup
+```
+FONTFACE="Terminus"
+FONTSIZE="16x32"
+```
+
+### i3exit
+
+Use i3 exit and blurlock scripts from [manjaro repo](https://gitlab.manjaro.org/packages/extra/i3exit)
 

@@ -17,7 +17,6 @@ fzf        \
 silversearcher-ag         \
 pcmanfm    \
 vim-gtk3   \
-lightdm    \
 imagemagick \
 pavucontrol \
 stow        \
@@ -30,12 +29,19 @@ network-manager \
 picom      \
 bc         \
 neofetch   \
-colordiff  \
 papirus-icon-theme \
 gtk2-engines-murrine \
 lxappearance \
 colordiff  \
 libnotify-bin \
 notify-osd \
+polybar  \
+rofi-dev \
+qalc \
+libtool \
+libtool-bin \
+build-essential \
+libpam0g-dev \
+libxcb-xkb-dev \
 -y
 
