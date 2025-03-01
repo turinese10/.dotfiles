@@ -9,6 +9,7 @@ curl       \
 firefox-esr \
 zsh        \
 rofi       \
+dunst      \
 scrot      \
 feh        \
 i3         \
@@ -24,6 +25,7 @@ thefuck     \
 tmux       \
 xclip      \
 xorg       \
+xinput     \
 ranger     \
 network-manager \
 picom      \
@@ -33,8 +35,6 @@ papirus-icon-theme \
 gtk2-engines-murrine \
 lxappearance \
 colordiff  \
-libnotify-bin \
-notify-osd \
 rofi-dev \
 qalc \
 libtool \
@@ -43,5 +43,7 @@ build-essential \
 libpam0g-dev \
 libxcb-xkb-dev \
 nitrogen \
+libreoffice \
+okular \
 -y
 
