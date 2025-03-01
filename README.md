@@ -132,10 +132,11 @@ FONTFACE="Terminus"
 FONTSIZE="16x32"
 ```
 
-### i3exit
+### /usr/bin scripts
 
-Original i3 exit and blurlock scripts from [manjaro repo](https://gitlab.manjaro.org/packages/extra/i3exit)
-They can be installed using the i3exit_install.sh script in the .scripts directory
+The original i3 exit and blurlock scripts from [manjaro repo](https://gitlab.manjaro.org/packages/extra/i3exit)
+The original i3scrot script can be found here: https://github.com/pazuzu156/i3scrot/tree/master
+They can be installed using the install_bin.sh script in the .scripts directory
 
 Add the following by running `sudo visudo` to allow i3exit to work
 ```
@@ -149,4 +150,18 @@ Use nitrogen to set wallpaper
 ### conky
 
 Original repo found here: https://github.com/takattila/Clock-With-Weather-Conky
+
+### xinput
+Use xinput to enable tapping and other touchpad functions
+
+`xinput` to list input devices
+`xinput list-props [touchpad id]` show properties for that device
+`xinput set-prop [touchpad id] [property id] [value]` to change the value of that property
+
+For persistent changes edit /usr/share/X11/xorg.conf.d/40-libinput.conf
+Add the following at the end of the touchpad section
+```
+	Option "Tapping" "on"
+	Option "ClickMethod" "clickfinger"
+```
 

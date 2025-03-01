@@ -75,8 +75,8 @@ bindsym $mod+Ctrl+F3 exec --no-startup-id pcmanfm_pkexec
 bindsym $mod+F4 exec --no-startup-id emacs
 bindsym $mod+F5 exec --no-startup-id i3-sensible-terminal -e 'mocp'
 bindsym $mod+F6 exec --no-startup-id i3-sensible-terminal -e 'bc -l'
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -300,9 +300,11 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id ~/.conky/Clock-With-Weather-Conky/scripts/start.sh ab38a375a217ce95ea9020d7941beb10
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # Color palette used for the i3-sensible-terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

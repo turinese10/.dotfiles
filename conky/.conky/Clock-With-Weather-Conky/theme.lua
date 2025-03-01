@@ -3,7 +3,7 @@ local settings = {}
 
 settings = {
     appearance = { 
-        name = "light",
+        name = "gruvbox",
     },
     weather = {
         name = "default",
