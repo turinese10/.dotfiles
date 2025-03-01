@@ -10,6 +10,7 @@ firefox-esr \
 zsh        \
 rofi       \
 dunst      \
+libnotify-bin \
 scrot      \
 feh        \
 i3         \
