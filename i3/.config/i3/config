@@ -208,6 +208,7 @@ bindsym $mod+Ctrl+0 move container to workspace $ws10; workspace $ws10
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
+for_window [floating] resize set 1600 1200, move position center
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -233,6 +234,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="^[fF]irefox" title="^Save As$"] floating enable, resize set 1600 1200, move position center
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -297,6 +299,7 @@ exec --no-startup-id clipit
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ~/.config/polybar/launch.sh

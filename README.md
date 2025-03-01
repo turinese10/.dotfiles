@@ -34,10 +34,12 @@ Here are some of the applications that I utilize.
  - A install.sh file is included in the .scripts directory with a complete list of installed packages for my own replication purposes.
 
 | Type              | Application     |
-| :---:             | :---:           |
+|:-----------------:|:---------------:|
 | Distro            | Debian          |
 | Shell             | zsh (oh-my-zsh) |
 | WM                | i3              |
+| DM                | ly              |
+| Launcher          | Rofi            |
 | Terminal Emulator | Alacritty       |
 | Main Editor       | Spacemacs       |
 | Secondary Editor  | vim             |
@@ -62,11 +64,25 @@ sudo apt install lxappearance
 
 ## Additional Install Steps
 
-### Vscode
+### oh-my-zsh
+
+Follow the instructions to install oh-my-zsh and any plugins needed.
+
+### vscode
 
 Install vscode using the [deb file](https://code.visualstudio.com/)
+Add the following extensions:
+- Gitlens
+- Local History
+- Python
+- Vim
+- C/C++
+- Remote SSH
+- Docker
+- Markdown all in one
+- Doxygen
 
-### Spacemacs
+### spacemacs
 
 The emacs package in the current bookworm repo are out of date use the bookworm backports.
 
@@ -78,13 +94,21 @@ sudo apt update
 sudo apt install emacs -t bookworm-backports
 ```
 
-After that spacemacs can be installed
+After that spacemacs can be installed.
 
 ```
 git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
 ```
 
+### polybar
+
+Polybar also needs to be installed through the backports.
+```
+sudo apt install polybar -t bookworm-backports
+```
+
 ### rofi-calc plugin
+
 Install the rofi-calc plugin found here: https://github.com/svenstaro/rofi-calc
 
 ### ly
@@ -110,5 +134,19 @@ FONTSIZE="16x32"
 
 ### i3exit
 
-Use i3 exit and blurlock scripts from [manjaro repo](https://gitlab.manjaro.org/packages/extra/i3exit)
+Original i3 exit and blurlock scripts from [manjaro repo](https://gitlab.manjaro.org/packages/extra/i3exit)
+They can be installed using the i3exit_install.sh script in the .scripts directory
+
+Add the following by running `sudo visudo` to allow i3exit to work
+```
+%sudo ALL=NOPASSWD: /bin/systemctl restart ly.service
+```
+
+### nitrogen
+
+Use nitrogen to set wallpaper
+
+### conky
+
+Original repo found here: https://github.com/takattila/Clock-With-Weather-Conky
 

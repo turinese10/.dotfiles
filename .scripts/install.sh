@@ -7,10 +7,10 @@ alacritty  \
 zip        \
 curl       \
 firefox-esr \
-emacs      \
 zsh        \
 rofi       \
 scrot      \
+feh        \
 i3         \
 htop       \
 fzf        \
@@ -35,7 +35,6 @@ lxappearance \
 colordiff  \
 libnotify-bin \
 notify-osd \
-polybar  \
 rofi-dev \
 qalc \
 libtool \
@@ -43,5 +42,6 @@ libtool-bin \
 build-essential \
 libpam0g-dev \
 libxcb-xkb-dev \
+nitrogen \
 -y
 
