@@ -46,5 +46,7 @@ libxcb-xkb-dev \
 nitrogen \
 libreoffice \
 okular \
+gimp \
+vlc \
 -y
 

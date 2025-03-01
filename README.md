@@ -152,6 +152,7 @@ Use nitrogen to set wallpaper
 Original repo found here: https://github.com/takattila/Clock-With-Weather-Conky
 
 ### xinput
+
 Use xinput to enable tapping and other touchpad functions
 
 `xinput` to list input devices
@@ -164,4 +165,10 @@ Add the following at the end of the touchpad section
 	Option "Tapping" "on"
 	Option "ClickMethod" "clickfinger"
 ```
+
+### firefox
+
+Install the following extensions:
+- AdBlock Plus
+- Tridactyl
 

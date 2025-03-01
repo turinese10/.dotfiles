@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 10x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -118,7 +118,7 @@
 
     ### Text ###
 
-    font = Monospace 8
+    font = Monospace 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -310,14 +310,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
     foreground = "#888888"
-    timeout = 10
+    timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
     background = "#285577"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -452,3 +452,21 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+[global]
+frame_color = "#ddc7a1"
+separator_color = "#ddc7a1"
+
+[base16_low]
+    msg_urgency = "low"
+    background = "#32302f"
+    foreground = "#665c54"
+
+[base16_normal]
+    msg_urgency = "normal"
+    background = "#504945"
+    foreground = "#ddc7a1"
+
+[base16_critical]
+    msg_urgency = "critical"
+    background = "#ea6962"
+    foreground = "#ebdbb2"
