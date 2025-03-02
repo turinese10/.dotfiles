@@ -172,3 +172,11 @@ Install the following extensions:
 - AdBlock Plus
 - Tridactyl
 
+### dropbox
+
+Install following the instructions [here](https://wiki.debian.org/dropbox)
+```
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+```
+

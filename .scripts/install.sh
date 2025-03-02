@@ -48,5 +48,7 @@ libreoffice \
 okular \
 gimp \
 vlc \
+diodon \
+nm-tray \
 -y
 

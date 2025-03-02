@@ -1,6 +1,8 @@
 #!/bin/bash
 
-API_KEY=$1
+source ~/.conky/Clock-With-Weather-Conky/openweather_api_key.sh
+
+#API_KEY=$1
 
 function checkAPIkey() {
     if [[ -z "${API_KEY}" ]]; then
